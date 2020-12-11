@@ -1,9 +1,12 @@
 import './App.css'
+import BurgerStack from './components/BurgerStack'
+import Ingredients from './components/Ingredients'
 
 function App() {
     return (
         <div className="App-header">
-            Burger Stacker
+            <BurgerStack />
+            <Ingredients />
         </div>
     )
 }

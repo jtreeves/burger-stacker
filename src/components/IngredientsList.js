@@ -7,7 +7,7 @@ function IngredientsList(props) {
             <button onClick={() => {
                 props.addIngredients(ingredient)
             }}>
-            ➕ 
+                {'>'}
             </button>
         </li>
     })

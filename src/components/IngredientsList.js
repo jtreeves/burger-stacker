@@ -2,7 +2,7 @@
 
 function IngredientsList(props) {
     const ingredientsToChoose = props.ingredients.map((ingredient, index) => {
-        <li key={index}>
+        return <li key={index}>
             {ingredient.name}
             <button onClick={() => {
                 props.addIngredients(ingredient)

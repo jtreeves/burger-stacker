@@ -7,10 +7,15 @@ function App() {
     const [ingredientsToDisplay, setIngredientsToDisplay] = useState(ingredients)
     const [burgerToDisplay, setBurgerToDisplay] = useState([])
 
-    const handleBurgerIngredients = (ingredient) => {
+    const addBurgerIngredients = (ingredient) => {
         const updatedBurger = [...burgerToDisplay]
         updatedBurger.push(ingredient)
         setBurgerToDisplay(updatedBurger)
+    }
+
+    const removeBurgerIngredients = (event) => {
+        event.preventDefault()
+        setBurgerToDisplay([])
     }
 
     return (

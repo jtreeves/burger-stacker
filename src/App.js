@@ -1,10 +1,12 @@
 import './App.css'
+import React, { useState } from 'react'
 import BurgerStack from './components/BurgerStack'
 import IngredientsList from './components/IngredientsList'
 import list from './data/list'
 
 function App() {
     const [ingredientsToDisplay, setIngredientsToDisplay] = useState(list)
+    
     const [burgerToDisplay, setBurgerToDisplay] = useState([])
 
     const addBurgerIngredients = (ingredient) => {
@@ -20,6 +22,7 @@ function App() {
 
     return (
         <div className='App-header'>
+            <h1>Burger Stacker</h1>
             <IngredientsList
                 ingredients={ingredientsToDisplay}
                 addIngredients={addBurgerIngredients}

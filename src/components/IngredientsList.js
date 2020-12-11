@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
 function IngredientsList(props) {
-    const [ingredientsToDisplay, setIngredientsToDisplay] = useState(props.ingredients)
+    // const [ingredientsToDisplay, setIngredientsToDisplay] = useState(props.ingredients)
     
     // const 
 

@@ -1,13 +1,21 @@
 // import React, { useState } from 'react'
 
 function IngredientsList(props) {
-    // const [ingredientsToDisplay, setIngredientsToDisplay] = useState(props.ingredients)
-    
-    // const 
+    const ingredientsToChoose = props.ingredients.map((ingredient, index) => {
+        <li key={index}>
+            {ingredient.name}
+            <button onClick={() => {
+                props.addIngredients(ingredient)
+            }}>
+            ➕ 
+            </button>
+        </li>
+    })
 
     return(
         <div>
-            Ingredients
+            <h1>Choose Ingredients</h1>
+            <ul>{ingredientsToChoose}</ul>
         </div>
     )
 }

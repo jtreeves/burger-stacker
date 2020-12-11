@@ -1,4 +1,4 @@
-const ingredients = [
+const list = [
     {name: 'Kaiser Bun', color: 'saddlebrown'},
     {name: 'Sesame Bun', color: 'sandybrown'},
     {name: 'Gluten Free Bun', color: 'peru'},
@@ -13,4 +13,4 @@ const ingredients = [
     {name: 'Onion', color: 'lightyellow'}
 ]
 
-export default ingredients
+export default list

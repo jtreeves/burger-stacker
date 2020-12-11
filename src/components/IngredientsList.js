@@ -14,7 +14,7 @@ function IngredientsList(props) {
 
     return(
         <div>
-            <h1>Choose Ingredients</h1>
+            <h2>Choose Ingredients</h2>
             <ul>{ingredientsToChoose}</ul>
         </div>
     )

@@ -7,7 +7,7 @@ function BurgerStack(props) {
     
     return(
         <div>
-            <h1>See Burger</h1>
+            <h2>See Burger</h2>
             <ul>{burgerIngredients}</ul>
             <p><button onClick={props.clearBurger}>
                 Clear Burger

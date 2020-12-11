@@ -10,7 +10,7 @@ function App() {
     const [burgerToDisplay, setBurgerToDisplay] = useState([])
 
     const addBurgerIngredients = (ingredient) => {
-        const updatedBurger = [...burgerToDisplay, ingredient]
+        const updatedBurger = [ingredient, ...burgerToDisplay]
         setBurgerToDisplay(updatedBurger)
     }
 
